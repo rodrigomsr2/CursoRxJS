@@ -1,0 +1,29 @@
+<head>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+
+<table>
+    <tr>
+      <th *ngFor="let head of headers">{{head}}</th>
+    </tr>
+    <tr *ngFor="let item of itens">
+        <td>{{item.nome}}</td>
+        <td>{{item.valor}}</td>
+        <td>{{item.quantidade}}</td>
+    </tr>
+</table>

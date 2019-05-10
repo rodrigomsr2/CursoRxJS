@@ -1,0 +1,30 @@
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        </style>
+</head>
+
+<div style="height:100%; width:100%; clear:both; padding-left: 45%; padding-top: 5%;">
+    <app-lista-livros
+        [subjectFiltro]="subjectFiltro"
+        ></app-lista-livros>
+    <app-filtro-livros
+        [subjectFiltro]="subjectFiltro"
+        ></app-filtro-livros>
+    <app-livros 
+        [subjectFiltro]="subjectFiltro"
+        ></app-livros>
+</div>
